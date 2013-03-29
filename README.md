@@ -35,7 +35,7 @@ This is a question, what is the answer?         |
 Images
 ======
 ![Question App Template Images](http://i.imgur.com/YTdboKN.png)
-
+The reason the Submit Button is not at the same level as the retry button is to prevent an accidental restart.
 Licensing
 =========
 This project falls under the Microsoft Reciprocal License (Ms-RL). For more info on this license please visit: 
