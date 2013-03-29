@@ -27,7 +27,7 @@ This is a question, what is the answer?         | // The actual question
 ~                                               |
 This is a question, what is the answer?         |
 #A1:Answer 1 #A2: Answer 2 #A3 Answer 3         |
-#A3  								|
+#A3  						        		|
 &&&&                                            | // Four &(Amperstands) specifies the document ends.
 ---------------------------------------------#END
 ```
