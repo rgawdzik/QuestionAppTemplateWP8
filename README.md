@@ -1,6 +1,5 @@
 Question App Template for Windows Phone 8
 ======================
-
 This project is a generic knowledge questionnaire template for a no coding app solution. You can literally make an
 app in 3 steps!
 
@@ -28,13 +27,21 @@ This is a question, what is the answer?         | // The actual question
 ~                                               |
 This is a question, what is the answer?         |
 #A1:Answer 1 #A2: Answer 2 #A3 Answer 3         |
-#A3  							                      				|
+#A3  								|
 &&&&                                            | // Four &(Amperstands) specifies the document ends.
 ---------------------------------------------#END
 ```
+
+Images
+======
+!(Question App Template Images)[http://i.imgur.com/YTdboKN.png]
 
 Licensing
 =========
 This project falls under the Microsoft Reciprocal License (Ms-RL). For more info on this license please visit: 
 http://www.tldrlegal.com/license/microsoft-reciprocal-license-(ms-rl)
 
+Author
+=======
+This project was coded by Robert Gawdzik.
+[Byte Code Canada][wwww.bytecode.ca]
