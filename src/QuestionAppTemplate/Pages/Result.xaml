@@ -30,7 +30,7 @@
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
             <StackPanel>
                 <Grid>
-                    <TextBlock Text="Total Answers: " FontSize="40" />
+                    <TextBlock Text="Total Questions: " FontSize="40" />
                     <TextBlock HorizontalAlignment="Right" x:Name="TotalAnswers" FontSize="40" />
                 </Grid>
                 <Grid >
