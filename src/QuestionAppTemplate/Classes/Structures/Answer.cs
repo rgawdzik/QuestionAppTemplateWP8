@@ -9,10 +9,9 @@ namespace QuestionAppTemplate.Classes.Structures
     /// <summary>
     /// Represents an answer in a question.
     /// </summary>
-    public class Answer
+    public class Answer : Bindable
     {
         public bool Correct { get; set; }
-
         public string AnswerStatement { get; set; }
 
         /// <summary>

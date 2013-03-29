@@ -4,7 +4,8 @@
 Make sure to follow the input specs of the Questions.txt carefully! Errors may occur if improperly setup!
 
 Requirements:
-At least 10 questions must be present. If there are more than 10 questions, then 
+At least 3 questions must be present. If there are less than 3 questions, then this program cannot function.
+Make sure the formatting is precise! The parser cannot interpret an unknown format!
 
 FORMAT
 ------

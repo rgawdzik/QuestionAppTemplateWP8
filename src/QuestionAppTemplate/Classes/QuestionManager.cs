@@ -17,7 +17,10 @@ namespace QuestionAppTemplate.Classes
     {
         public string AppName { get; set; }
 
-        public ObservableCollection<Question> QuestionList;
+        public ObservableCollection<Question> QuestionList { get; set; }
+        public int CurrentQuestion { get; set; }
+
+        public int CorrectQuestionsAmount { get; set; }
 
         /// <summary>
         /// Sets up and randomly arranges the questions in the question Manager.
@@ -30,6 +33,15 @@ namespace QuestionAppTemplate.Classes
             AppName = appname;
         }
 
+        public bool NoMoreQuestions()
+        {
+            return !(CurrentQuestion < QuestionList.Count - 1);
+        }
+
+        public Question GetCurrentQuestion()
+        {
+            return QuestionList[CurrentQuestion];
+        }
 
         /// <summary>
         // FORMAT
@@ -57,11 +69,15 @@ namespace QuestionAppTemplate.Classes
 
             for (int i = 0; i < splitBySeperators.Length; i++)
             {
-                if (i == 0) appTitle = splitBySeperators[i];
-                else
+                if (splitBySeperators[i].Length > 2 && !splitBySeperators[i].Contains("&&&&"))
                 {
-                    Question toParseQuestion = new Question(splitBySeperators[i], ParseAnswers(splitBySeperators[i + 1]), GetCorrect(splitBySeperators[i + 3]));
-                    returnList.Add(toParseQuestion);
+                    if (i == 0) appTitle = splitBySeperators[i];
+                    else
+                    {
+                        Question toParseQuestion = new Question(splitBySeperators[i], ParseAnswers(splitBySeperators[i + 1]), GetCorrect(splitBySeperators[i + 2]));
+                        returnList.Add(toParseQuestion);
+                        i += 2;
+                    }
                 }
             }
 
@@ -72,7 +88,7 @@ namespace QuestionAppTemplate.Classes
         /// </summary>
         private int GetCorrect(string correctAnswer)
         {
-            return Int32.Parse(correctAnswer.Substring(1, correctAnswer.Length)) - 1;
+            return Int32.Parse(correctAnswer.Substring(2, correctAnswer.Length - 2)) - 1;
         }
         
         /// <summary>
@@ -82,10 +98,10 @@ namespace QuestionAppTemplate.Classes
         /// <returns>The split string data.</returns>
         private string[] ParseAnswers(string answerData)
         {
-            string[] splitAnswers = answerData.Substring(1,answerData.Length).Split('#');
+            string[] splitAnswers = answerData.Substring(1,answerData.Length - 1).Split('#');
             for(int i = 0; i < splitAnswers.Length; i++)
             {
-                splitAnswers[i] = splitAnswers[i].Substring(2, splitAnswers[i].Length);
+                splitAnswers[i] = splitAnswers[i].Substring(3, splitAnswers[i].Length - 3).Trim();
             }
             return splitAnswers;
         }

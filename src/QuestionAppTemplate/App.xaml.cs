@@ -7,6 +7,8 @@ using System.Windows.Navigation;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
 using QuestionAppTemplate.Resources;
+using QuestionAppTemplate.Classes;
+using System.Threading.Tasks;
 
 namespace QuestionAppTemplate
 {
@@ -55,7 +57,11 @@ namespace QuestionAppTemplate
                 PhoneApplicationService.Current.UserIdleDetectionMode = IdleDetectionMode.Disabled;
             }
 
+            
+
         }
+
+        
 
         // Code to execute when the application is launching (eg, from Start)
         // This code will not execute when the application is reactivated
