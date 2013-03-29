@@ -34,7 +34,7 @@ This is a question, what is the answer?         |
 
 Images
 ======
-![Question App Template Images][http://i.imgur.com/YTdboKN.png]
+![Question App Template Images](http://i.imgur.com/YTdboKN.png)
 
 Licensing
 =========
