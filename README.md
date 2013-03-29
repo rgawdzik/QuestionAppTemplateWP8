@@ -34,7 +34,7 @@ This is a question, what is the answer?         |
 
 Images
 ======
-!(Question App Template Images)[/image.png]
+![Question App Template Images][/image.png]
 
 Licensing
 =========
