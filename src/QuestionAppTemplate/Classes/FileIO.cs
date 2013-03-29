@@ -32,6 +32,12 @@ namespace QuestionAppTemplate.Classes
             return await reader.ReadToEndAsync();
         }
 
+        public static async Task<string> ReadStaticResource(string fileName)
+        {
+            Stream resource = System.Windows.Application.GetResourceStream(new Uri(fileName, UriKind.Relative)).Stream;
+            return await new StreamReader(resource).ReadToEndAsync();
+        }
+
         /// <summary>
         /// Adds a file to Isolated Storage.
         /// </summary>

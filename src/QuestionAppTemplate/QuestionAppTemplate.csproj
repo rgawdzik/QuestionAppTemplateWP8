@@ -93,6 +93,7 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Classes\Bindable.cs" />
     <Compile Include="Classes\FileIO.cs" />
     <Compile Include="Classes\QuestionManager.cs" />
     <Compile Include="Classes\Structures\Answer.cs" />
@@ -144,8 +145,12 @@
     <Content Include="Assets\Tiles\IconicTileSmall.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Questions\Questions.txt" />
-    <Content Include="Questions\README.txt" />
+    <Resource Include="Questions\Questions.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Content Include="Questions\README.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources\AppResources.resx">
