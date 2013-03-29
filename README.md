@@ -44,4 +44,4 @@ http://www.tldrlegal.com/license/microsoft-reciprocal-license-(ms-rl)
 Author
 =======
 This project was coded by Robert Gawdzik.
-[Byte Code Canada][wwww.bytecode.ca]
+[Byte Code Canada](wwww.bytecode.ca)
