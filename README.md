@@ -14,11 +14,10 @@ Make sure to follow the input specs of the Questions.txt carefully! Errors may o
 
 Questions/Questions.txt Requirements:
 ======================================
-At least 3 questions must be present. If there are more than 3 questions, then this program cannot function.
+At least 3 questions must be present. If there are less than 3 questions, then this program cannot function.
 Make sure the formatting is precise! The parser cannot interpret an unknown format!
 
-FORMAT
-------
+The Format
 ```
 ------------------------------------------ #START
 Title                                           | //The title of the app.
@@ -29,8 +28,13 @@ This is a question, what is the answer?         | // The actual question
 ~                                               |
 This is a question, what is the answer?         |
 #A1:Answer 1 #A2: Answer 2 #A3 Answer 3         |
-#A3  											|
+#A3  							                      				|
 &&&&                                            | // Four &(Amperstands) specifies the document ends.
 ---------------------------------------------#END
 ```
+
+Licensing
+=========
+This project falls under the Microsoft Reciprocal License (Ms-RL). For more info on this license please visit: 
+http://www.tldrlegal.com/license/microsoft-reciprocal-license-(ms-rl)
 
